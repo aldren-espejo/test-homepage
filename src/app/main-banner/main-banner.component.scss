@@ -48,11 +48,12 @@
 
     li{
 
+
         a{
             display: block;
             position: relative;
             color: #0798ce;
-            padding: 10px 10px 10px 50px;
+            padding: 20px 10px 20px 65px;
             background: #d9f1f9;
             transform: translateX(120px);
             transition: all 0.1s ease-out;
@@ -60,16 +61,29 @@
             &:before{
                 content: "";
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: 10px;
+                left: 10px;
                 height: 100%;
                 width: 40px;
-                background: #aaa;
+                background-size: 90%;
             }
 
             &:hover{
                 transform: translateX(0);
                 transition: all 0.3s ease;
+            }
+
+            &.skype:before{
+                background: url('../../assets/img/icon-skype.png') no-repeat;
+            }
+            &.facebook:before{
+                background: url('../../assets/img/icon-facebook.png') no-repeat;
+            }
+            &.twitter:before{
+                background: url('../../assets/img/icon-twitter.png') no-repeat;
+            }
+            &.linkedIn:before{
+                background: url('../../assets/img/icon-linkedIn.png') no-repeat;
             }
         }
     }

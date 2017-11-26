@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class MapContactComponent implements OnInit {
   name = '';
   email = '';
+  message = '';
 
   frmSubmit(){
-   
+   alert('Thank You ' + this.name + '. \n' + 'Your email is: ' + this.email + '. \n' +  'We got your message: ' + this.message )
   }
 
   constructor() { }

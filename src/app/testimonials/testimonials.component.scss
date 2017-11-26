@@ -24,7 +24,21 @@
 
     .carousel-control{
         background: transparent;
+
+        &.left span{
+            background: url('../../assets/img/arrow-left.png') no-repeat;
+        }
+
+        &.right span{
+            background: url('../../assets/img/arrow-right.png') no-repeat;
+        }
+
+        span{
+            width: 40px;
+            height: 40px;
+        }
     }
+
 
     h3{
         position: relative;
