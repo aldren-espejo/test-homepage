@@ -1,0 +1,38 @@
+@import "../../assets/scss/variables.scss";
+
+.instagram-feed{
+    padding: 40px 0 0;
+
+    h2{
+        text-align: center;
+        margin: 0 0 40px;
+    }
+
+    .lst-posts{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 0;
+
+        @media(min-width:992px){
+            flex-wrap: nowrap;
+        }
+    }
+
+    li{
+        width: 33.33%;
+
+        @media(min-width:768px){
+            width: 25%;
+        }
+
+        @media(min-width:992px){
+            width: 14%;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+}

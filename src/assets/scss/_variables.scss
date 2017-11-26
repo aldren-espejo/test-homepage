@@ -1,1 +1,26 @@
+@import "utilities.scss";
+
+// brand-colors
+$primary: #01767d;
+$primary-light-20: #06b4be;
+$primary-light-40: #0ab5d9;
+$primary-light-60: #08e2ef;
+$primary-light-80: #f2fbfb;
+$primary-light-90: #f6fdfd;
+$primary-darken-20: #065054;
+
+// bootstrap variable overrides
 $bootstrap-sass-asset-helper: true;
+$font-size-h1: 35px;
+$font-size-h2: 40px;
+$font-size-h3: 20px;
+$font-size-h4: 16px;
+$text-color: $primary;
+$link-color: $primary;
+$link-hover-decoration: none;
+$link-hover-color: $primary-light-20;
+$btn-primary-bg:$primary-light-20;
+$btn-primary-color: #fff;
+$btn-primary-border: transparent;
+$font-family-base: 'Raleway', sans-serif;;
+

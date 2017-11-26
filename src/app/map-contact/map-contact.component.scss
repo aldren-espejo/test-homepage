@@ -1,0 +1,41 @@
+@import "../../assets/scss/variables.scss";
+
+.map-contact{
+    @media(min-width:992px){
+        padding: 40px 0;
+    }
+
+    .conlmtd-map-contact{
+        @media(min-width:768px){
+            display: flex;
+        }
+    }
+
+    .map-locations{
+        @media(min-width:768px){
+            width:60%;
+        }
+
+        @media(min-width:992px){
+            width:50%;
+        }
+    }
+
+    .contact-form{
+        padding: 20px;
+        background: $primary-light-80;
+
+        @media(min-width:768px){
+            width: 40%;
+        }
+
+        @media(min-width:992px){
+            width: 40%;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    h2{
+        margin: 0 0 20px;
+    }
+}

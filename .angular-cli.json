@@ -26,7 +26,10 @@
           "../node_modules/bootstrap-sass/assets/stylesheets"
         ]
       },
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.slim.min.js",
+        "../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

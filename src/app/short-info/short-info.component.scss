@@ -1,0 +1,51 @@
+@import "../../assets/scss/variables.scss";
+
+.short-info{
+    background: $primary-light-80;
+    padding: 30px;
+
+    @media(min-width:992px){
+        padding: 70px 0;
+    }
+    
+    .intro{
+        @media(min-width:992px){
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    .featured-img{
+        @media(min-width:992px){
+            width: 45%;
+        }
+    }
+
+    .intro-text{
+        padding: 0;
+
+        @media(min-width:992px){
+            padding: 0 50px;
+        }        
+    }
+
+    .sleeping{
+        float: left;
+        margin: 0 30px 20px 0;
+
+        @media(min-width:768px){
+            width: auto;
+        }
+    }
+
+    h2{
+        font-size: 30px;
+        @media(min-width:992px){
+            margin: 0 0 20px;
+        }
+    }
+
+    p{
+        font-size: 25px;
+    }
+}

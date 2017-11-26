@@ -1,0 +1,64 @@
+@import "../../assets/scss/variables.scss";
+
+footer{
+    background: #00767e url('../../assets/img/sunrise-faded.png') no-repeat;
+    background-position: right;
+    background-size: cover;
+    padding: 30px 30px 30px;
+    color: #fff;
+    font-size: 22px;
+
+    @media(min-width:992px){
+        background-size: contain;
+    }
+
+    @media(min-width:992px){
+        padding: 50px 0;
+    }
+    
+    .conlmtd-contact-loc-time{
+        @media(min-width:768px){
+            display: flex;
+        }
+
+        img{
+            width: auto;
+        }
+    }
+
+    .availability{
+        margin: 40px 0 0;
+        
+        @media(min-width:768px){
+            width: 40%;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    .location{
+        display: block;
+        margin: 20px 0;
+    }
+
+    .contact-location{
+        @media(min-width:768px){
+            width: 50%;
+        }
+    }
+
+    .lst-contact-options{
+        list-style: none;
+        padding: 0;
+    }
+
+    .lst-hours{
+        list-style: none;
+        padding: 0;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    a{color: #fff;}
+}

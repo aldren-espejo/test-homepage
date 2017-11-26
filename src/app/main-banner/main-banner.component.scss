@@ -1,0 +1,77 @@
+@import "../../assets/scss/variables.scss";
+
+.main-banner{
+    display: flex;
+    justify-content: center;
+    background: #eee;
+    background: url('../../assets/img/bg-main-banner.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding: 130px 0 0;
+    
+    @media(min-width:992px){
+        padding: 120px 0;  
+    }
+    .conlmtd-pitch{
+        display: flex;
+        justify-content: flex-start;
+
+        @media(min-width:992px){
+            width: 1140px;
+        }
+    }
+
+    .pitch{
+        margin: 30px;
+        padding: 20px;
+        background: rgba(255,255,255,0.9);
+        @media(min-width:992px){
+            width: 630px;
+            padding: 50px;
+        }       
+    }
+
+    h2{
+        font-size: 22px;
+        margin: 30px 0;
+        color: $primary-darken-20;
+    }
+
+    .contact-shortcuts{
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    li{
+
+        a{
+            display: block;
+            position: relative;
+            color: #0798ce;
+            padding: 10px 10px 10px 50px;
+            background: #d9f1f9;
+            transform: translateX(120px);
+            transition: all 0.1s ease-out;
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 40px;
+                background: #aaa;
+            }
+
+            &:hover{
+                transform: translateX(0);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+}

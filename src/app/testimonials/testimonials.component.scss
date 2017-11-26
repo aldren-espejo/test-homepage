@@ -1,0 +1,47 @@
+@import "../../assets/scss/variables.scss";
+
+.testimonials{
+    background: $primary-light-90;
+    padding: 20px 0;
+    
+    .conlmtd-testimonials{
+        padding: 0 50px;
+        position: relative;
+
+        @media(min-width:992px){
+            padding: 0 150px;
+        }
+    }
+
+    .lst-testimonials{
+        list-style: none;
+        padding: 0;
+    }
+
+    .item{
+        text-align: center;
+    }
+
+    .carousel-control{
+        background: transparent;
+    }
+
+    h3{
+        position: relative;
+        padding: 0 0 40px;
+        margin: 0;       
+    }
+
+    span{
+        display: block;
+        margin: 20px 0 0;
+
+        @media(min-width:992px){
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            margin: 0;
+        }
+    }
+
+}

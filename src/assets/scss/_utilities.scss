@@ -1,0 +1,26 @@
+$g-base-rem: 16px !default;
+
+@function unitless($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function px-to-rem($value){
+  @return unitless($value) / unitless($g-base-rem) * 1rem;
+}
+
+@function rem($value){
+	@if type-of($value) == "list" {
+	  $count: length($value); 
+	  $temp-list: ();
+	  
+	  @for $i from 1 through $count{
+      $temp-list: append($temp-list, px-to-rem(nth($value, $i)));   
+	  }
+	  
+	  @return $temp-list;
+	}
+	
+	@elseif type-of($value) == "number" {
+	  @return px-to-rem($value);
+	}
+}
